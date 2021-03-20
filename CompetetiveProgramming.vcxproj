@@ -140,6 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="LeetCode\Defanging an IP Address.cpp" />
+    <ClCompile Include="LeetCode\Kids With the Greatest Number of Candies.cpp" />
+    <ClCompile Include="LeetCode\Running Sum of 1d Array.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />

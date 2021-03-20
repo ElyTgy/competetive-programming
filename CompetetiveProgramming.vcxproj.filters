@@ -18,6 +18,12 @@
     <ClCompile Include="LeetCode\Defanging an IP Address.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode\Running Sum of 1d Array.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode\Kids With the Greatest Number of Candies.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
