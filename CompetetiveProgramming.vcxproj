@@ -139,12 +139,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CSES\MissingNumber.cpp" />
+    <ClCompile Include="CSES\NumberSprial.cpp" />
+    <ClCompile Include="CSES\Permutations.cpp" />
+    <ClCompile Include="CSES\Repetitions.cpp" />
+    <ClCompile Include="CSES\WeirdAlgorithm.cpp" />
     <ClCompile Include="LeetCode\Defanging an IP Address.cpp" />
     <ClCompile Include="LeetCode\Kids With the Greatest Number of Candies.cpp" />
+    <ClCompile Include="LeetCode\Richest Customer Wealth.cpp" />
     <ClCompile Include="LeetCode\Running Sum of 1d Array.cpp" />
+    <ClCompile Include="LeetCode\Shuffle the Array.cpp" />
+    <ClCompile Include="LeetCode\Subrectangle Queries.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
+    <None Include="LeetCode\Number of Good Pairs.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

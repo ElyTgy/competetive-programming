@@ -24,8 +24,33 @@
     <ClCompile Include="LeetCode\Kids With the Greatest Number of Candies.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode\Richest Customer Wealth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode\Shuffle the Array.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode\Subrectangle Queries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CSES\WeirdAlgorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CSES\MissingNumber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CSES\Repetitions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CSES\NumberSprial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CSES\Permutations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
+    <None Include="LeetCode\Number of Good Pairs.cpp" />
   </ItemGroup>
 </Project>
