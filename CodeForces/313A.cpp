@@ -15,10 +15,10 @@ int main()
         bool removeLast;
         if(max(last, beforeLast) == beforeLast)
         {//remove before last
-            std::cout<<(int)(n/100)*10+last;
+            std::cout<<((int)(n/100)*10+last)*-1;
         }
         else{//remove last
-            std::cout<<(n/10);
+            std::cout<<((int)(n/10))*-1;
         }
     }
 
