@@ -35,7 +35,6 @@ void solve()
     std::string str;
     string outstr = "";
     int wubCount=0;
-    int lastWub=0;
     std::cin>>str;
 
     if(str.length() <= 3 && str != "WUB"){std::cout<<str;return;}
@@ -45,7 +44,6 @@ void solve()
     {
         if(str[i]=='W' && str[i+1]=='U' && str[i+2]=='B' && i <= str.length()-3)
         {
-            lastWub = i+2;
             i+=3;
             wubCount += 1;
             if((!outstr.empty()) && wubCount == 1){outstr.push_back(' ');}
@@ -57,10 +55,6 @@ void solve()
             ++i;
         }
     }
-
-    //if (lastWub+1 >= str.length()-3 && lastWub+1 < str.length())
-    //{for(int j = lastWub+1; j < str.length(); ++j){outstr.push_back(str[j]);}}
-    //else if (lastWub+1 < str.length()){for(int j = str.length()-3; j < str.length(); ++j){outstr.push_back(str[j]);}}
 
     RemoveTrailingSpace(outstr);
     std::cout<<outstr;

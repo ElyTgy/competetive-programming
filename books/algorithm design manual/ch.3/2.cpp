@@ -1,5 +1,5 @@
 #include <stack>
-//link to same problem on leetcode: 
+//link to same problem on leetcode: https://leetcode.com/problems/reverse-linked-list/submissions/
 
 struct ListNode {
      int val;
