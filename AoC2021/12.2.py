@@ -1,10 +1,12 @@
 from typing import DefaultDict
-from collections import defaultdict
+from collections import defaultdict, Counter
+import copy
 graph = defaultdict(list)
 
 import sys
 sys.setrecursionlimit(300000)
-all_paths = []
+path_count = 0
+char_paths = []
 
 for line in iter(input, '\n'):
     if line == "exit":
@@ -29,31 +31,44 @@ def printAllPathsUntil(u, d, visited, path, specilchar):
             visited[u][1] += 1
             if visited[u][1] == 2:
                 visited[u][0] = True
-    print("current path is", u, "and it has been visited", visited[u][0], visited[u][1])
+    #print("current path is", u, "and it has been visited", visited[u][0], visited[u][1])
 
     path.append(u)
 
     if u == d:
-        all_paths.append(path)
-        print(path)
+        global path_count
+        path_count+=1
+        char_paths.append(copy.deepcopy(tuple(path)))
+        #for e in path:
+        #    print(e, end=",")
+        #print()
     else:
         for i in graph[u]:
             if visited[i][0] == False:
                 printAllPathsUntil(i, d, visited, path, specilchar)
     
+    path.pop()
     if specilchar == u:
         if visited[u][1] ==1 or visited[u][1] == 2:
             visited[u][1] -= 1
-        if visited[u][1] == 0:
-            path.pop()
-            visited[u][0] = False
-    else:
-        path.pop()
-        visited[u][0] = False
+    visited[u][0] = False
 
 
-visited = dict([(key, [False,0]) for key in graph.keys()])
-path = []
-printAllPathsUntil("start", "end", visited, path, 'b')
-print(len(all_paths))
-print(all_paths)
+all_paths = []
+lower_cases = [node for node in graph.keys() if (node.islower() and node != "start" and node != "end")]
+for c in lower_cases:
+    visited = dict([(key, [False,0]) for key in graph.keys()])
+    path = []
+    printAllPathsUntil("start", "end", visited, path, c)
+    all_paths.append(char_paths)
+    char_paths = []
+
+map = {}
+for c_arr in all_paths:
+    for path in c_arr:
+        if path in map:
+            map[path] += 1
+        else:
+            map[path] = 1
+
+print(len(map.keys()))
