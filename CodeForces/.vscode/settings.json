@@ -1,6 +1,8 @@
 {
     "files.associations": {
+        "algorithm": "cpp",
         "atomic": "cpp",
+        "cctype": "cpp",
         "cmath": "cpp",
         "compare": "cpp",
         "concepts": "cpp",
@@ -23,12 +25,12 @@
         "ostream": "cpp",
         "stdexcept": "cpp",
         "streambuf": "cpp",
+        "string": "cpp",
         "system_error": "cpp",
         "tuple": "cpp",
         "type_traits": "cpp",
         "typeinfo": "cpp",
         "utility": "cpp",
-        "vector": "cpp",
         "xfacet": "cpp",
         "xiosbase": "cpp",
         "xlocale": "cpp",
@@ -39,9 +41,14 @@
         "xstring": "cpp",
         "xtr1common": "cpp",
         "xutility": "cpp",
-        "string": "cpp",
-        "sstream": "cpp",
-        "cctype": "cpp",
-        "strstream": "cpp"
+        "array": "cpp",
+        "ctime": "cpp",
+        "iomanip": "cpp",
+        "list": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "xhash": "cpp",
+        "xlocmon": "cpp",
+        "xloctime": "cpp"
     }
 }
