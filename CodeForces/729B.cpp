@@ -64,8 +64,8 @@ void solve() {
      for(int i=0; i<m; ++i){
         bool hasUp = false;
         for(int j=0; j<n; ++j){
-            updp[i][j]=hasUp;
-            if(arr[i][j]==1){
+            updp[j][i]=hasUp;
+            if(arr[j][i]==1){
                 hasUp=true;
             }
         }
